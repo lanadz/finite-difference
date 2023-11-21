@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/styles.css?v=20231119230313">
+    <script defer src="index.js?v=20231119230313"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"></link>
+    <title>Finite Difference</title>
+  </head>
+
+  <body>
+    <h1>Finite Difference</h1>
+
+    <div class="horizontal-container">
+      <div class="vertical-container">
+        <div id="instructions" class="instructions">
+          Build your table for x and y values.
+        </div>
+        <form id="coords" class="form" name="coords" action="" method="get">
+          <table id="coords-table">
+            <tr>
+              <th>X</th>
+              <th>Y</th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td><input type="number" name="x1" id="x1" size="2" placeholder="0" value="0" /></td>
+              <td><input type="number" name="y2" id="y1" size="2" placeholder="0" value="0" /></td>
+              <td><input type="button" name="add" id="add" size ="2" value="+" /></td>
+            </tr>
+          </table>
+          <p>
+            <input type="submit" id="find_differences" value="Find differences"/>
+          </p>
+        </form>
+
+        <div id="result" class="instructions"></div>
+
+
+        <div class="form">
+          <button id="clean" class="btn">Restart!</button>
+        </div>
+      </div>
+
+      <div class="vertical-container">
+        <div class="game">
+          <canvas id="coordinate-system" width="500" height="500"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <p>Andrew, you are the best!</p>
+    <p class="small">Svitlana Dzyuban &copy; 2023</p>
+
+  </body>
+</html>
